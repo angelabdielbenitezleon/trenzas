@@ -1,0 +1,82 @@
+body {
+    background-image: url('fondo2.jpg');
+    background-size: cover;           
+    background-repeat: no-repeat;    
+    background-attachment: fixed;    
+    background-position: center;     
+    color: white;                    
+    font-family: Arial, sans-serif;   
+}
+
+h1 {
+    background-color: rgb(254, 255, 255);
+    text-align: center;  /* Aqui solo nos funciona para poner en el centro lo elegido */
+    color: #3d261c;      /* Color oscuro para que contraste bien con el fondo blanco */
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Contenedor principal que organiza las tarjetas una debajo de otra y centradas */
+.tipos-de-trenzas {
+    display: flex;
+    flex-direction: column; /* Apila las tarjetas verticalmente una debajo de otra */
+    align-items: center;    /* Centra todas las tarjetas en la pantalla */
+    gap: 25px;              /* Espacio vertical entre cada tarjeta */
+    margin: 40px auto;
+    max-width: 700px;
+}
+
+/* Estilo de la tarjeta individual */
+.tarjeta-trenza {
+    background: rgba(40, 30, 24, 0.8); /* Fondo oscuro semitransparente */
+    backdrop-filter: blur(5px);         
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    padding: 20px;
+    border-radius: 14px;                
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease;
+}
+
+/* Efecto cuando pasas el mouse por encima de la tarjeta */
+.tarjeta-trenza:hover {
+    transform: translateY(-3px);
+}
+
+/* Contenedor interno para poner la imagen y el texto lado a lado */
+.contenido-tarjeta {
+    display: flex;
+    align-items: center; /* Centra verticalmente el texto respecto a la imagen */
+    gap: 20px;           /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo para las imágenes dentro de la tarjeta */
+.conteido-tarjeta img, .tarjeta-trenza img {
+    width: 180px;        /* Ancho fijo para que se vea uniforme y elegante */
+    height: 140px;       /* Alto fijo */
+    object-fit: cover;   /* Evita que la imagen se deforme */
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+/* Bloque del texto a la derecha */
+.texto-tarjeta {
+    text-align: left; /* Alinea el texto a la izquierda de su espacio */
+}
+
+/* Estilo para el título (h3) */
+.tarjeta-trenza h3 {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    color: #fdfbf7;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); 
+}
+
+/* Estilo para el párrafo descriptivo */
+.tarjeta-trenza p {
+    font-size: 0.95rem;
+    color: #f0e6dc;
+    line-height: 1.4;
+}

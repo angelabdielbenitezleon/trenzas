@@ -1,0 +1,148 @@
+body {
+    background-image: url('fondo2.jpg');
+    background-size: cover;          
+    background-repeat: no-repeat;    
+    background-attachment: fixed;    
+    background-position: center;     
+    color: white;                    
+    font-family: Arial, sans-serif;   
+}
+
+
+.titulo-cholo {
+    font-size: 60px;
+    font-family: 'Sancreek', cursive; 
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8); 
+}
+
+h1 {
+    background-color: rgb(254, 255, 255);
+    text-align: center;  /* Aqui solo nos funciona para poner en el centro lo elegido */
+    color: #3d261c; /* Ajustado para que contraste bien con el fondo blanco */
+    padding: 10px;
+}
+
+h2 {
+    /*background-color:powderblue; / /*Este es para poner el color de fondo pero queda a elejir aun */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.contenedor-imagenes {
+  display: flex;             /* este nos ayuda a poner las secciones una al lado de la otra (a la misma altura) */
+  justify-content: center;   /* centramos las tarjetas de forma uniforme */
+  gap: 40px;                 /* espacio entre cada tarjeta */
+  align-items: stretch;      /* estira las tarjetas para que midan lo mismo de alto */
+  margin: 40px auto;         /* le vamos a dar margen al contenido de las orillas */
+  max-width: 900px;
+}
+
+.seccion-trenza {
+  text-align: center;            /* Centra tanto el título como la imagen dentro de su propio bloque */
+  background: rgba(40, 30, 24, 0.65); /* Fondo semitransparente oscuro que combina con el estilo rústico */
+  backdrop-filter: blur(5px);    /* Efecto difuminado moderno para el fondo */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil elegante */
+  padding: 20px;
+  border-radius: 16px;           /* Esquinas redondeadas para que se vea como una tarjeta limpia */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad sobre el fondo */
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto de elevación al pasar el mouse por la tarjeta */
+.seccion-trenza:hover {
+  transform: translateY(-5px);
+}
+
+/* Opcional: Para darle un poco de estilo extra a los títulos */
+.seccion-trenza h3 {
+  margin-bottom: 15px; 
+  color: #fdfbf7;
+}
+
+/* Aseguramos que las imágenes tengan el mismo tamaño exacto y no se desalineen */
+.seccion-trenza img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover; /* Evita que la imagen se deforme al recortarla al tamaño exacto */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.contenedor-redes {
+    display: flex;
+    flex-direction: column; /* este nos ayudara a coloca el título arriba y los íconos abajo */
+    align-items: center; /* Aqui centraremos los elementos */
+    margin: 40px;
+    margin-top: auto; 
+    
+ 
+}
+
+.grupo-iconos {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* aqui lo que hace es que este valor para juntar o separar más las imágenes */
+}
+
+.seccion-redes {
+    text-align: center;
+}
+
+.contenedor-redes h3 {
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+button {
+  display: block;
+  width: 100%;
+  max-width: 220px; 
+  margin: 15px auto 0 auto;
+  background: linear-gradient(135deg, #775b36, #5c4033); /* Integrado con tu tono café original pero con degradado */
+  color: #fdfbf7; 
+  border: 1px solid rgba(255, 255, 255, 0.15); 
+  padding: 12px 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.5px; /* Da un aspecto más limpio al texto */
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Sombra para darle profundidad y que "flote" sobre el fondo */
+  transition: all 0.3s ease; 
+}
+
+/* Efecto cuando pasas el cursor por encima, tambien me puede servir para las imagenes pero checo */
+button:hover {
+  background: linear-gradient(135deg, #8a6a43, #6e4f41);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px); /* Sube ligeramente al pasar el cursor */
+}
+
+/* Efecto al hacer clic, me puede servir para las imagens pero debo de checar */
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*
+colorpropiedad  para los colores del texto.
+font-familypropiedad  para fuentes de texto.
+font-sizepropiedad  para los tamaños de texto.
+borderpropiedad para los bordes.
+paddingpropiedad para el espacio dentro del borde.
+marginpropiedad para el espacio fuera del borde. */
+
+/* body style="background-color:powderblue;" esto es para poner el fondo completo, debe estar dentro del body */
+
+/* background-color:powderblue; debe de estar dentro de los h o p para solo ponerle fondo a ellos*/
+
+ /* color:blue; para ponerle solo a la letra */
+
+ /* font-family:verdana;  para el tipo de fuente del texto*/
+
+ /* font-size:300% tamaño de texto */
+
+ /* text-align:center; para alinear los textos*/
